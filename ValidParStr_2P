@@ -41,3 +41,4 @@ class Solution {
         // return stack.isEmpty();
     }
 }
+//false cases )( with wrong order, ((* under closed, *)) over closed, 
