@@ -42,3 +42,8 @@ class Solution {
     }
 }
 //false cases )( with wrong order, ((* under closed, *)) over closed, 
+//If r becomes negative: You have too many ) and not enough ( or * to save them. Return false immediately.
+
+//If l becomes negative: Reset it to 0. (You can't have "negative" open brackets; it just means some * acted as empty strings).
+
+//At the end: If l == 0, it means you were able to close everything perfectly.
