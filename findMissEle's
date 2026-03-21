@@ -1,0 +1,49 @@
+package basic;
+import java.util.*;
+public class MissingEle2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int arr[]= {1,2,4,5,7};
+//		int n= arr.length;
+//		int maxSearchEle= arr[n-1];
+//		System.out.println(maxSearchEle);
+		
+		
+		//case2 array unsorted how to find max ele
+//		int arr[]= {1,3,2,7,5};
+//		int maxEle= arr[0];
+//		for(int i=1; i<arr.length;i++) {
+//			if(arr[i]>maxEle) {
+//				maxEle= arr[i];
+//			}
+//		}
+//		System.out.println(maxEle);
+		
+		
+		//case three finding max ele using Math.max
+		int arr[]= {1,3,2,7,5};
+		int max= arr[0];
+		for(int num: arr) {
+			max= Math.max(max, num);
+			System.out.println(max);
+		}
+		System.out.println("test");
+		System.out.println(max);
+
+		
+
+		Set<Integer> hs = new HashSet<Integer>();
+		for(int num: arr) {
+			hs.add(num);
+		}
+		for(int i=1; i<=max; i++) {
+			if(!hs.contains(i)) {
+				System.out.println("Missing elements are: "+ i);
+			}
+		}
+		
+
+	}
+
+}
