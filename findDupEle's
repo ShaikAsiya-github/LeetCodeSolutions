@@ -12,6 +12,7 @@ public class FindingDup {
 		
 		for(int num: arr) {
 			if(!hs.add(num)) {
+//Is the trick used in Collection frameworks true: NOT already in set(adds nmbr) false: Already in set(set doesn't add to add duplicate ele which is false)
 				System.out.println(num);
 			}
 		}
