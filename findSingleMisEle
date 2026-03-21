@@ -1,17 +1,23 @@
 package basic;
 
-public class FindMissingEle1 {
-	public static void main(String args[]) {
-		int arr[]= {1,0,2,4};
-		int n=arr.length;
-		int s=0;
-		for(int i=0;i<n;i++) {
-			s+=arr[i];
-		}
-		System.out.println("Sum of array elements is: "+s);
-		int res=n*(n+1)/2-s;
-		System.out.println("The missing element is "+ res);
+public class MissingEle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
+		int arr[]= {1,2,4,5};
+		int n= arr.length;
+		int sum= (n+1)*(n+2)/2;
+		System.out.println("Sum is :"+sum);
+		int arrSum=0;
+		for(int num: arr) {
+			arrSum=arrSum+num;
+			System.out.println(arrSum);
+			
+		}
+		System.out.println("Missing element is: ");
+		System.out.println(sum-arrSum);
+
 	}
 
 }
