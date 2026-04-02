@@ -1,0 +1,25 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        int temp=x; //temp= 121
+        int d;
+        int rev=0;
+        while(x>0){
+            
+            d= x%10;    //d=1, 2, 1
+            rev= d+rev*10; //rev=1, 2+10=12, 1+12*10= 121
+            x= x/10; //temp=12, 1, 0
+        }
+        if(rev==temp){
+           return true;
+        }
+
+        else{
+            return false;
+        }
+
+      
+         
+
+        
+    }
+}
