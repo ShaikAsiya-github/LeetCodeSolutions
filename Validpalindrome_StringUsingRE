@@ -1,0 +1,10 @@
+import re
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        clear= re.sub(r'[^a-zA-Z0-9]','',s).lower()
+        #re.sub(pattern, replacement, string)
+        print(clear)
+        rev= clear[::-1]
+        print(rev)
+        return clear==rev
+        
